@@ -1,6 +1,4 @@
- <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<style>
+<html lang="en" dir="ltr"><head><style>
   .yellow-background {
     background-color: yellow;
   }
@@ -41,9 +39,9 @@
     color: red;
   }
   </style>
-  <head>
-      <link rel="shortcut icon" type="image/png" href="https://lighthouse.church/wp-content/uploads/2019/09/Logo.png"/>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <link rel="shortcut icon" type="image/png" href="https://lighthouse.church/wp-content/uploads/2019/09/Logo.png">
+      <link rel="stylesheet" type="text/css" href="data:text/css;charset=UTF-8,%0A%20%20%20%20%20%20.darkmode-layer%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.5s%20ease%3B%0A%20%20%20%20%20%20%20%20mix-blend-mode%3A%20difference%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--button%20%7B%0A%20%20%20%20%20%20%20%20width%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20height%3A%202.9rem%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20right%3A%20unset%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2064px%3B%0A%20%20%20%20%20%20%20%20left%3A%2032px%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--simple%20%7B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(1)%20!important%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--expanded%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20scale(100)%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-layer--no-transition%20%7B%0A%20%20%20%20%20%20%20%20transition%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23100f2c%3B%0A%20%20%20%20%20%20%20%20width%3A%203rem%3B%0A%20%20%20%20%20%20%20%20height%3A%203rem%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20border%3Anone%3B%0A%20%20%20%20%20%20%20%20right%3A%20unset%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2064px%3B%0A%20%20%20%20%20%20%20%20left%3A%2032px%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%200.5s%20ease%3B%0A%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--white%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-toggle--inactive%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20.darkmode-background%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20pointer-events%3A%20none%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20-10%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20img%2C%20.darkmode-ignore%20%7B%0A%20%20%20%20%20%20%20%20isolation%3A%20isolate%3B%0A%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40media%20screen%20and%20(-ms-high-contrast%3A%20active)%2C%20(-ms-high-contrast%3A%20none)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%40supports%20(-ms-ime-align%3Aauto)%2C%20(-ms-accelerator%3Atrue)%20%7B%0A%20%20%20%20%20%20%20%20.darkmode-toggle%20%7Bdisplay%3A%20none%20!important%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20"></head><body><div class="darkmode-background"></div><div class="darkmode-layer darkmode-layer--button"></div><button class="darkmode-toggle">🌓</button><nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="LacrosseHub LacrosseHub2" href="#">LacrosseHub</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +53,7 @@
             <a class="nav-link" href="file:///C:/Users/jmbas/Documents/index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Downloads/index.html">About</a>
+            <a class="nav-link" href="Downloadindex.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
@@ -67,20 +65,20 @@
     <meta charset="utf-8">
     <title>LacrosseHub</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  </head>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <body>
+
         <center>
-          <h1 class= "LacrosseHub LacrosseHub2">Welcome to LacrosseHub!</h1>
+          <h1 class="LacrosseHub LacrosseHub2">Welcome to LacrosseHub!</h1>
         </center>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+
   <center>
-    <img class="smaller-image thin-yellow-border"src=https://s3.amazonaws.com/maxlaxoc/wp-content/myfiles/2019/07/22194407/Crean-Lutheran.jpg />
+    <img class="smaller-image thin-yellow-border" src="https://s3.amazonaws.com/maxlaxoc/wp-content/myfiles/2019/07/22194407/Crean-Lutheran.jpg">
   </center>
   <center><p class="LacrosseHub3">Monday And Wednesday shcedule:</p></center>
   <center>
@@ -104,20 +102,22 @@
     <p>CoolDown/Stretch: Stretch your muscles. they need a break.</p>
   </ul>
   </center>
-    <body>
+
   <script>
     document.write(date());
   </script>
-  </body>
+
 <center>
-  <a href="https://www.instagram.com/alanbaskinn/"><img class="smaller-image3" src= https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png /></a>
+  <a href="https://www.instagram.com/alanbaskinn/"><img class="smaller-image3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"></a>
 
 </center>
 <center>
-  <p class= "LacrosseRed">
-    Made With 🅱ootstrap
+  <p class="LacrosseRed">
+    Made With 🅱ootstrap And DarkMode.js
   </p>
 </center>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-<script src="./script.js"></script>
-</html>
+<script>
+  new Darkmode().showWidget();
+</script>
+</body></html>
