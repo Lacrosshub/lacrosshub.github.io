@@ -40,6 +40,7 @@
   }
   </style>
   <head>
+    <!--code below is from bootstrap-->
       <link rel="shortcut icon" type="image/png" href="https://lighthouse.church/wp-content/uploads/2019/09/Logo.png"/>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="LacrosseHub LacrosseHub2" href="#">LacrosseHub</a>
@@ -80,42 +81,52 @@
   <center>
     <img class="smaller-image thin-yellow-border" src="https://s3.amazonaws.com/maxlaxoc/wp-content/myfiles/2019/07/22194407/Crean-Lutheran.jpg">
   </center>
-  <center><p class="LacrosseHub3">Monday And Wednesday shcedule:</p></center>
+  <head>
+    <meta charset="utf-8"  />
+    <title>LacrosseHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
   <center>
-    <ul class="LacrosseHub3">
-    <p>Warmup: Do a Dynamic Warmup within 10 yards back and forth</p>
-    <p>WallBall: Throw some balls on the wall back and forth and maybe do some tricks while you are at it.</p>
-    <p>Run: Just run as fast as you can back and forth on a feild. This will improve your stamina.</p>
-    <p>CoolDown/Stretch: stretch our your muscles. They need a break.</p>
-  </ul>
-  </center>
-  <center>
-    <p class="LacrosseHub3">
-    Tuesday/Thursday schedule:
-  </p>
-  </center>
-  <center>
-    <ul class="LacrosseHub3">
-    <p>Warmup: Do a Dynamic Warmup within 10 yards back and forth. </p>
-    <p>Skills Work: Partner up if you want and 1v1 to get some dodging and shooting in you.</p>
-    <p>Run: Just Run as fast as you ban back and forth on a feild.</p>
-    <p>CoolDown/Stretch: Stretch your muscles. they need a break.</p>
-  </ul>
-  </center>
+  <table>
+    <tr>
+  <th class="LacrosseHub3">Monday And Wednesday shcedule:</th>
+  <th class="LacrosseHub3">Tuesday And Thursday Schedule:</th>
+  </tr>
+  <tr>
+    <td class="LacrosseHub3">  Warmup: Do a Dynamic Warmup within 10 yards back and forth
+      WallBall: Throw some balls on the wall back and forth and maybe do some tricks while you are at it.
+      Run: Just run as fast as you can back and forth on a feild. This will improve your stamina.
+      CoolDown/Stretch: stretch our your muscles. They need a break.</td>
+      <td class="LacrosseHub3">
+        Warmup: Do a Dynamic Warmup within 10 yards back and forth.
 
+        Skills Work: Partner up if you want and 1v1 to get some dodging and shooting in you.
+
+        Run: Just Run as fast as you ban back and forth on a feild.
+
+        CoolDown/Stretch: Stretch your muscles. they need a break.
+      </td>
+  </tr>
+</center></table>
   <script>
     document.write(date());
   </script>
 
 <center>
   <a href="https://www.instagram.com/alanbaskinn/"><img class="smaller-image3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"></a>
-
+<!-- instagram image and url is taken from Instagram-->
 </center>
 <center>
   <p class="LacrosseRed">
     Made With 🅱ootstrap And DarkMode.js
   </p>
+  <!-- DarkMode Js owns the code below. URL: https://darkmodejs.learn.uno/-->
 </center>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script src="script.js"></script>
+<p id="date"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
 </body></html>
